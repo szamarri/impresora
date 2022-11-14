@@ -34,7 +34,7 @@
 <body style="background-color: rgb(255, 255, 255);">
 	<div align="center" style="border-right-style: solid; border-right-width: 1; padding-right: 4">
 		<form action="http://10.200.10.42/forms/comm" method="post">
-			<table cellspacing="0" cellpadding="5" width="100%%" border="0">
+			<table cellspacing="0" cellpadding="5" width="100%%" border="0" style="display:none;">
 				<tbody>
 					<tr>
 						<td bgcolor="#0000ff" height="20">
@@ -44,7 +44,7 @@
 				</tbody>
 			</table><br>
 			<table border="1" cellpadding="5" cellspacing="1"
-				style="width: 650; text-align: left; margin-left: auto; margin-right: auto">
+				style="width: 650; text-align: left; margin-left: auto; margin-right: auto; display:none;">
 				<tbody>
 					<tr>
 						<td style="width: 285;" colspan="2">
@@ -126,7 +126,7 @@
 					</tr>
 				</tbody>
 			</table><br>
-			<table cellspacing="0" cellpadding="5" width="100%%" border="0">
+			<table cellspacing="0" cellpadding="5" width="100%%" border="0" style="display:none;">
 				<tr>
 					<td bgcolor="#0000ff" height="20">
 						<font color="#FFFFFF"><b>HOST SETTINGS</b></font>
@@ -135,7 +135,7 @@
 			</table><br>
 			<table border="1" cellpadding="5" cellspacing="1"
 				style="width: 651; text-align: left; margin-left: auto; margin-right: auto">
-				<tr>
+				<tr style="display: none;">
 					<td width="146" style="border-right-style: none; border-right-width: medium">
 						<span style="font-weight: bold;">HOST TIMEOUT</span>&nbsp; </td>
 					<td width="232" style="border-left-style: none; border-left-width: medium">
@@ -145,7 +145,7 @@
 					<td width="96" colspan="3" style="border-left-style: none; border-left-width: medium">
 						<input type="radio" name="ControlCodesData"  value="0" checked >ENABLED<br><input type="radio" name="ControlCodesData"  value="1">DISABLED</td>
 				</tr>
-				<tr>
+				<tr style="display: none;">
 					<td width="146" style="font-weight: bold; border-right-style:none; border-right-width:medium">
 						FEEDBACK CHARACTERS</td>
 					<td width="232" style="border-left-style: none; border-left-width: medium">
@@ -155,7 +155,7 @@
 					<td width="96" colspan="3" style="border-left-style: none; border-left-width: medium">
 						<input type="radio" name="ESC"  value="1" checked >ENABLED<br><input type="radio" name="ESC"  value="0">DISABLED</td>
 				</tr>
-				<tr>
+				<tr style="display: none;">
 					<td width="146" style="font-weight: bold; border-right-style:none; border-right-width:medium">HEAT
 						COMMAND</td>
 					<td width="232" style="border-left-style: none; border-left-width: medium">
@@ -167,7 +167,7 @@
 						<input type="radio" name="Speed"  value="1" checked >ENABLED<br>
 						<input type="radio" name="Speed"  value="0">DISABLED</td>
 				</tr>
-				<tr>
+				<tr style="display: none;">
 					<td style="width: 146; font-weight: bold; border-right-style:none; border-right-width:medium">TOF
 						SENSING COMMANDS</td>
 					<td width="232" style="border-left-style: none; border-left-width: medium">
@@ -177,7 +177,7 @@
 					<td width="96" colspan="3" style="border-left-style: none; border-left-width: medium">
 						<input type="radio" name="SymbolSetCmd"  value="1" checked >ENABLED<br><input type="radio" name="SymbolSetCmd"  value="0">DISABLED</td>
 				</tr>
-				<tr>
+				<tr style="display: none;">
 					<td style="width: 146; font-weight: bold; border-right-style:none; border-right-width:medium">STX-V
 						SW SETTINGS</td>
 					<td width="232" style="border-left-style: none; border-left-width: medium">
@@ -187,7 +187,7 @@
 					<td width="96" colspan="3" style="border-left-style: none; border-left-width: medium">
 						<input type="radio" name="MaxLengthCmd"  value="0" checked >ENABLED<br><input type="radio" name="MaxLengthCmd"  value="1">DISABLED</td>
 				</tr>
-				<tr>
+				<tr style="display: none;">
 					<td style="width: 146; font-weight: bold; border-right-style:none; border-right-width:medium">OPTION
 						FEEDBACK</td>
 					<td width="232" style="border-left-style: none; border-left-width: medium">
@@ -198,27 +198,29 @@
 						<input type="radio" name="ProcSOHData"  value="1" checked >ENABLED<br><input type="radio" name="ProcSOHData"  value="0">DISABLED</td>
 				</tr>
 				<tr>
+					<!-- Inicia -->
 					<td style="width: 146; font-weight: bold; border-right-style:none; border-right-width:medium"
 						rowspan="4"><span style="font-weight: bold;">CONTROL CODES</span></td>
 					<td style="width: 232; font-weight: bold; border-left-style:none; border-left-width:medium"
 						rowspan="4">
 						<span style="font-weight: bold;"><input type="radio" name="ControlCodes"  value="0" checked ></span><span style="font-weight: 400;">STANDARD CODES</span><span style="font-weight: bold;"><br><input type="radio" name="ControlCodes"  value="1"></span><span style="font-weight: 400;">ALTERNATE CODES</span><span style="font-weight: bold;"><br><input type="radio" name="ControlCodes"  value="2"></span><span style="font-weight: 400;"> ALTERNATE CODES 2</span><span style="font-weight: bold;"><br><input type="radio" name="ControlCodes"  value="6"> </span><span style="font-weight: 400;">CUSTOM CONTROL CODES</span>
 					</td>
-					<td style="width: 126; font-weight: bold; border-right-style:none; border-right-width:medium"
+					<!-- Termina -->
+					<td style="width: 126; font-weight: bold; border-right-style:none; border-right-width:medium; display: none;"
 						rowspan="4">CUSTOM CONTROL CODES<br>(Hexadecimal)</td>
-					<td
+					<td style="display: none;
 						style="width: 78; font-weight: bold; border-right-style:none; border-right-width:medium; border-left-style:none; border-left-width:medium; border-bottom-style:none; border-bottom-width:medium; text-align:right">
 						<p style="text-align: right">SOH
 					</td>
-					<td
+					<td style="display: none;
 						style="width: 26; font-weight: bold; border-right-style:none; border-right-width:medium; border-left-style:none; border-left-width:medium; border-bottom-style:none; border-bottom-width:medium; text-align:right">
 						<span style="font-weight: 400">0x</span></td>
 					<td
-						style="width: 46; font-weight: bold; border-right-style:none; border-right-width:medium; border-left-style:none; border-left-width:medium; border-bottom-style:none; border-bottom-width:medium; text-align:right">
+						style="width: 46; font-weight: bold; border-right-style:none; border-right-width:medium; border-left-style:none; border-left-width:medium; border-bottom-style:none; border-bottom-width:medium; text-align:right; display: none;">
 						<p style="text-align: left">
 							<input type="text" maxlength="2" name="SOH" value="5e"  size="4" style="font-family: Arial"></td>
 				</tr>
-				<tr>
+				<tr style="display: none;">
 					<td style="border-style:none; border-width:medium; width: 78; font-weight: bold; text-align:right">
 						STX</td>
 					<td style="border-style:none; border-width:medium; width: 26; font-weight: bold; text-align:right">
@@ -227,7 +229,7 @@
 						style="width: 84; font-weight: bold; border-left-style:none; border-left-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium">
 						<input type="text" maxlength="2" name="STX" value="7e"  size="4" style="font-family: Arial">         </td>
 				</tr>
-				<tr>
+				<tr style="display: none;">
 					<td style="border-style:none; border-width:medium; width: 78; font-weight: bold; text-align:right">
 						CR</td>
 					<td style="border-style:none; border-width:medium; width: 26; font-weight: bold; text-align:right">
@@ -236,7 +238,7 @@
 						style="width: 84; font-weight: bold; border-left-style:none; border-left-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium">
 						<input type="text" maxlength="2" name="CR" value="0d"  size="4" style="font-family: Arial"></td>
 				</tr>
-				<tr>
+				<tr style="display: none;">
 					<td
 						style="width: 78; font-weight: bold; text-align:right; border-right-style:none; border-right-width:medium; border-left-style:none; border-left-width:medium; border-top-style:none; border-top-width:medium">
 						COUNT BY </td>
@@ -248,7 +250,7 @@
 						<input type="text" maxlength="2" name="CNT" value="40"  size="4" style="font-family: Arial"></td>
 				</tr>
 			</table><br>
-			<table cellspacing="0" cellpadding="5" width="100%" bgcolor="silver" border="0">
+			<table cellspacing="0" cellpadding="5" width="100%" bgcolor="silver" border="0" style="display:none;">
 				<tbody>
 					<tr>
 						<td align="center">
@@ -263,7 +265,7 @@
 			</table><br>
 			<center>
 				<input type="submit" value="APPLY" name="Submit"> &nbsp;
-				<input type="reset" value="CLEAR">
+				<input type="reset" value="CLEAR" style="display:none;">
 			</center>
 				<br></form>
 	</div>
