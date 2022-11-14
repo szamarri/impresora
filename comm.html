@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+	<meta http-equiv="Content-Language" content="en-us">
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Change Current Printer Settings</title>
+	<style type="text/css">
+		body {
+			font-size: 10pt;
+			font-family: arial, helvetica, sans-serif;
+			background-color: white
+		}
+
+		a:link {
+			color: #000000
+		}
+
+		a:active {
+			color: #000000
+		}
+
+		a:visited {
+			color: #000000
+		}
+
+		td {
+			font-size: 10pt;
+			font-family: arial, helvetica, sans-serif
+		}
+	</style>
+</head>
+
+<body style="background-color: rgb(255, 255, 255);">
+	<div align="center" style="border-right-style: solid; border-right-width: 1; padding-right: 4">
+		<form action="http://10.200.10.42/forms/comm" method="post">
+			<table cellspacing="0" cellpadding="5" width="100%%" border="0">
+				<tbody>
+					<tr>
+						<td bgcolor="#0000ff" height="20">
+							<font color="white"><b>COMMUNICATIONS</b></font>
+						</td>
+					</tr>
+				</tbody>
+			</table><br>
+			<table border="1" cellpadding="5" cellspacing="1"
+				style="width: 650; text-align: left; margin-left: auto; margin-right: auto">
+				<tbody>
+					<tr>
+						<td style="width: 285;" colspan="2">
+							<p align="center"><b>SERIAL PORT A</b></p>
+						</td>
+						<td width="336" colspan="2">
+							<p align="center"><b>SERIAL PORT B</b></p>
+						</td>
+					</tr>
+					<tr>
+						<td width="137" style="border-right-style: none; border-right-width: medium">
+							<span style="font-weight: bold;">BAUD RATE </span>&nbsp; </td>
+						<td width="137" style="border-left-style: none; border-left-width: medium">
+							<select size="1" name="PortABaud"  style="font-family: Arial"><option value="0">2400 BPS</option><option value="1">4800 BPS</option><option value="2" selected >9600 BPS</option><option value="3">19200 BPS</option><option value="4">28800 BPS</option><option value="5">38400 BPS</option><option value="6">1200 BPS</option><option value="7">57600 BPS</option><option value="8">115200 BPS</option></select>
+						</td>
+						<td width="137" style="border-right-style: none; border-right-width: medium">
+							<span style="font-weight: bold;">BAUD RATE </span></td>
+						<td width="188" style="border-left-style: none; border-left-width: medium">
+							<select size="1" name="PortBBaud"  style="font-family: Arial"><option value="0">2400 BPS</option><option value="1">4800 BPS</option><option value="2" selected >9600 BPS</option><option value="3">19200 BPS</option><option value="4">28800 BPS</option><option value="5">38400 BPS</option><option value="6">1200 BPS</option><option value="7">57600 BPS</option><option value="8">115200 BPS</option></select>
+						</td>
+					</tr>
+					<tr>
+						<td width="137" style="border-right-style: none; border-right-width: medium">
+							<span style="font-weight: bold;">PROTOCOL</span>&nbsp;&nbsp; </td>
+						<td width="137" style="border-left-style: none; border-left-width: medium">
+							<select size="1" name="PortAProt"  style="font-family: Arial"><option value="3" selected >BOTH</option><option value="2">HARDWARE</option><option value="1">SOFTWARE</option><option value="0">NONE</option></select>
+						</td>
+						<td width="137" style="border-right-style: none; border-right-width: medium">
+							<span style="font-weight: bold;">PROTOCOL</span>&nbsp;&nbsp;</td>
+						<td width="188" style="border-left-style: none; border-left-width: medium">
+							<select size="1" name="PortBProt"  style="font-family: Arial"><option value="3" selected >BOTH</option><option value="2">HARDWARE</option><option value="1">SOFTWARE</option><option value="0">NONE</option></select>
+						</td>
+					</tr>
+					<tr>
+						<td width="137" style="border-right-style: none; border-right-width: medium">
+							<span style="font-weight: bold;">PARITY</span></td>
+						<td width="137" style="border-left-style: none; border-left-width: medium">
+							<input type="radio" name="PortAParity"  value="0" checked >NONE<br><input type="radio" name="PortAParity"  value="1">ODD<br><input type="radio" name="PortAParity"  value="2">EVEN</td>
+						<td width="137" style="border-right-style: none; border-right-width: medium">
+							<span style="font-weight: bold;">PARITY</span></td>
+						<td width="188" style="border-left-style: none; border-left-width: medium">
+							<input type="radio" name="PortBParity"  value="0" checked >NONE<br><input type="radio" name="PortBParity"  value="1">ODD<br><input type="radio" name="PortBParity"  value="2">EVEN</td>
+					</tr>
+					<tr>
+						<td width="137" style="border-right-style: none; border-right-width: medium">
+							<span style="font-weight: bold;">DATA BITS</span></td>
+						<td width="137" style="border-left-style: none; border-left-width: medium">
+							<input type="radio" name="PortAData"  value="7">7<br><input type="radio" name="PortAData"  value="8" checked >8</td>
+						<td width="137" style="border-right-style: none; border-right-width: medium">
+							<span style="font-weight: bold;">DATA BITS</span>&nbsp;</td>
+						<td width="188" style="border-left-style: none; border-left-width: medium">
+							<input type="radio" name="PortBData"  value="7">7<br><input type="radio" name="PortBData"  value="8" checked >8</td>
+					</tr>
+					<tr>
+						<td width="137" style="border-right-style: none; border-right-width: medium">
+							<span style="font-weight: bold;">STOP BITS</span></td>
+						<td width="137" style="border-left-style: none; border-left-width: medium">
+							<input type="radio" name="PortAStop"  value="1" checked >1<br><input type="radio" name="PortAStop"  value="2">2</td>
+						<td width="137" style="border-right-style: none; border-right-width: medium">
+							<span style="font-weight: bold;">STOP BITS</span></td>
+						<td width="188" style="border-left-style: none; border-left-width: medium">
+							<input type="radio" name="PortBStop"  value="1" checked >1<br><input type="radio" name="PortBStop"  value="2">2</td>
+					</tr>
+					<tr>
+						<td width="285" align="center" colspan="2"><b>PARALLEL PORT A</b></td>
+						<td width="336" colspan="2">
+							<p align="center"><b>PARALLEL PORT B</b></p>
+						</td>
+					</tr>
+					<tr>
+						<td width="25%%" style="border-right-style: none; border-right-width: medium">
+							<span style="font-weight: bold;">PORT DIRECTION</span></td>
+						<td width="25%%" style="border-left-style: none; border-left-width: medium">
+							<input type="radio" name="PortADirection"  value="1">UNI-DIRECTIONAL<br><input type="radio" name="PortADirection"  value="2" checked >BI-DIRECTIONAL</td>
+						<td width="25%%" style="border-right-style: none; border-right-width: medium">
+							<span style="font-weight: bold;">PORT DIRECTION</span></td>
+						<td width="25%%" style="border-left-style: none; border-left-width: medium">
+							<input type="radio" name="PortBDirection"  value="1">UNI-DIRECTIONAL<br><input type="radio" name="PortBDirection"  value="2" checked >BI-DIRECTIONAL</td>
+					</tr>
+				</tbody>
+			</table><br>
+			<table cellspacing="0" cellpadding="5" width="100%%" border="0">
+				<tr>
+					<td bgcolor="#0000ff" height="20">
+						<font color="#FFFFFF"><b>HOST SETTINGS</b></font>
+					</td>
+				</tr>
+			</table><br>
+			<table border="1" cellpadding="5" cellspacing="1"
+				style="width: 651; text-align: left; margin-left: auto; margin-right: auto">
+				<tr>
+					<td width="146" style="border-right-style: none; border-right-width: medium">
+						<span style="font-weight: bold;">HOST TIMEOUT</span>&nbsp; </td>
+					<td width="232" style="border-left-style: none; border-left-width: medium">
+						<input type="text" maxlength="2" name="Timeout" value="10"  size="4" style="font-family: Arial"> Seconds</td>
+					<td width="126" style="border-right-style: none; border-right-width: medium"><b>CONTROL CODES</b>
+					</td>
+					<td width="96" colspan="3" style="border-left-style: none; border-left-width: medium">
+						<input type="radio" name="ControlCodesData"  value="0" checked >ENABLED<br><input type="radio" name="ControlCodesData"  value="1">DISABLED</td>
+				</tr>
+				<tr>
+					<td width="146" style="font-weight: bold; border-right-style:none; border-right-width:medium">
+						FEEDBACK CHARACTERS</td>
+					<td width="232" style="border-left-style: none; border-left-width: medium">
+						<input type="radio" name="Feedback"  value="1">ENABLED<br><input type="radio" name="Feedback"  value="0" checked >DISABLED</td>
+					<td width="126" style="font-weight: bold; border-right-style:none; border-right-width:medium">ESC
+						SEQUENCES</td>
+					<td width="96" colspan="3" style="border-left-style: none; border-left-width: medium">
+						<input type="radio" name="ESC"  value="1" checked >ENABLED<br><input type="radio" name="ESC"  value="0">DISABLED</td>
+				</tr>
+				<tr>
+					<td width="146" style="font-weight: bold; border-right-style:none; border-right-width:medium">HEAT
+						COMMAND</td>
+					<td width="232" style="border-left-style: none; border-left-width: medium">
+						<input type="radio" name="HeatCommand"  value="1" checked >ENABLED<br>
+						<input type="radio" name="HeatCommand"  value="0">DISABLED</td>
+					<td width="126" style="font-weight: bold; border-right-style:none; border-right-width:medium">SPEED
+						COMMANDS</td>
+					<td width="96" colspan="3" style="border-left-style: none; border-left-width: medium">
+						<input type="radio" name="Speed"  value="1" checked >ENABLED<br>
+						<input type="radio" name="Speed"  value="0">DISABLED</td>
+				</tr>
+				<tr>
+					<td style="width: 146; font-weight: bold; border-right-style:none; border-right-width:medium">TOF
+						SENSING COMMANDS</td>
+					<td width="232" style="border-left-style: none; border-left-width: medium">
+						<input type="radio" name="TOF"  value="1" checked >ENABLED<br><input type="radio" name="TOF"  value="0">DISABLED</td>
+					<td width="126" style="border-right-style: none; border-right-width: medium">
+						<b>SYMBOL SET COMMAND</b></td>
+					<td width="96" colspan="3" style="border-left-style: none; border-left-width: medium">
+						<input type="radio" name="SymbolSetCmd"  value="1" checked >ENABLED<br><input type="radio" name="SymbolSetCmd"  value="0">DISABLED</td>
+				</tr>
+				<tr>
+					<td style="width: 146; font-weight: bold; border-right-style:none; border-right-width:medium">STX-V
+						SW SETTINGS</td>
+					<td width="232" style="border-left-style: none; border-left-width: medium">
+						<input type="radio" name="STXV"  value="0" checked >ENABLED<br><input type="radio" name="STXV"  value="1">DISABLED</td>
+					<td width="126" style="border-right-style: none; border-right-width: medium">
+						<b>MAX LENGTH COMMAND</b></td>
+					<td width="96" colspan="3" style="border-left-style: none; border-left-width: medium">
+						<input type="radio" name="MaxLengthCmd"  value="0" checked >ENABLED<br><input type="radio" name="MaxLengthCmd"  value="1">DISABLED</td>
+				</tr>
+				<tr>
+					<td style="width: 146; font-weight: bold; border-right-style:none; border-right-width:medium">OPTION
+						FEEDBACK</td>
+					<td width="232" style="border-left-style: none; border-left-width: medium">
+						<input type="radio" name="OptFeedback"  value="0" checked >DISABLED<br><input type="radio" name="OptFeedback"  value="1"> SCANNER<br><input type="radio" name="OptFeedback"  value="2"> RFID HEX<br><input type="radio" name="OptFeedback"  value="3"> RFID ASCII<br><input type="radio" name="OptFeedback"  value="4"> PRINTER</td>
+					<td width="126" style="border-right-style: none; border-right-width: medium">
+						<b>PROCESS SOH (DATA)</b></td>
+					<td width="96" colspan="3" style="border-left-style: none; border-left-width: medium">
+						<input type="radio" name="ProcSOHData"  value="1" checked >ENABLED<br><input type="radio" name="ProcSOHData"  value="0">DISABLED</td>
+				</tr>
+				<tr>
+					<td style="width: 146; font-weight: bold; border-right-style:none; border-right-width:medium"
+						rowspan="4"><span style="font-weight: bold;">CONTROL CODES</span></td>
+					<td style="width: 232; font-weight: bold; border-left-style:none; border-left-width:medium"
+						rowspan="4">
+						<span style="font-weight: bold;"><input type="radio" name="ControlCodes"  value="0" checked ></span><span style="font-weight: 400;">STANDARD CODES</span><span style="font-weight: bold;"><br><input type="radio" name="ControlCodes"  value="1"></span><span style="font-weight: 400;">ALTERNATE CODES</span><span style="font-weight: bold;"><br><input type="radio" name="ControlCodes"  value="2"></span><span style="font-weight: 400;"> ALTERNATE CODES 2</span><span style="font-weight: bold;"><br><input type="radio" name="ControlCodes"  value="6"> </span><span style="font-weight: 400;">CUSTOM CONTROL CODES</span>
+					</td>
+					<td style="width: 126; font-weight: bold; border-right-style:none; border-right-width:medium"
+						rowspan="4">CUSTOM CONTROL CODES<br>(Hexadecimal)</td>
+					<td
+						style="width: 78; font-weight: bold; border-right-style:none; border-right-width:medium; border-left-style:none; border-left-width:medium; border-bottom-style:none; border-bottom-width:medium; text-align:right">
+						<p style="text-align: right">SOH
+					</td>
+					<td
+						style="width: 26; font-weight: bold; border-right-style:none; border-right-width:medium; border-left-style:none; border-left-width:medium; border-bottom-style:none; border-bottom-width:medium; text-align:right">
+						<span style="font-weight: 400">0x</span></td>
+					<td
+						style="width: 46; font-weight: bold; border-right-style:none; border-right-width:medium; border-left-style:none; border-left-width:medium; border-bottom-style:none; border-bottom-width:medium; text-align:right">
+						<p style="text-align: left">
+							<input type="text" maxlength="2" name="SOH" value="5e"  size="4" style="font-family: Arial"></td>
+				</tr>
+				<tr>
+					<td style="border-style:none; border-width:medium; width: 78; font-weight: bold; text-align:right">
+						STX</td>
+					<td style="border-style:none; border-width:medium; width: 26; font-weight: bold; text-align:right">
+						<span style="font-weight: 400">0x</span></td>
+					<td
+						style="width: 84; font-weight: bold; border-left-style:none; border-left-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium">
+						<input type="text" maxlength="2" name="STX" value="7e"  size="4" style="font-family: Arial">         </td>
+				</tr>
+				<tr>
+					<td style="border-style:none; border-width:medium; width: 78; font-weight: bold; text-align:right">
+						CR</td>
+					<td style="border-style:none; border-width:medium; width: 26; font-weight: bold; text-align:right">
+						<span style="font-weight: 400">0x</span></td>
+					<td
+						style="width: 84; font-weight: bold; border-left-style:none; border-left-width:medium; border-top-style:none; border-top-width:medium; border-bottom-style:none; border-bottom-width:medium">
+						<input type="text" maxlength="2" name="CR" value="0d"  size="4" style="font-family: Arial"></td>
+				</tr>
+				<tr>
+					<td
+						style="width: 78; font-weight: bold; text-align:right; border-right-style:none; border-right-width:medium; border-left-style:none; border-left-width:medium; border-top-style:none; border-top-width:medium">
+						COUNT BY </td>
+					<td
+						style="width: 26; font-weight: bold; border-left-style:none; border-left-width:medium; border-top-style:none; border-top-width:medium; text-align:right; border-right-style:none; border-right-width:medium">
+						<span style="font-weight: 400">0x</span></td>
+					<td
+						style="width: 84; font-weight: bold; border-left-style:none; border-left-width:medium; border-top-style:none; border-top-width:medium">
+						<input type="text" maxlength="2" name="CNT" value="40"  size="4" style="font-family: Arial"></td>
+				</tr>
+			</table><br>
+			<table cellspacing="0" cellpadding="5" width="100%" bgcolor="silver" border="0">
+				<tbody>
+					<tr>
+						<td align="center">
+							<font size="2">PASSWORD IS REQUIRED TO CHANGE SETTINGS</font>
+						</td>
+					</tr>
+					<tr>
+						<td align="center" height="20">
+							<input type="password" maxlength="32" size="15" name="http_pwd"> </td>
+					</tr>
+				</tbody>
+			</table><br>
+			<center>
+				<input type="submit" value="APPLY" name="Submit"> &nbsp;
+				<input type="reset" value="CLEAR">
+			</center>
+				<br></form>
+	</div>
+</body>
+
+</html>
