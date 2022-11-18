@@ -1,5 +1,21 @@
 # Configuraciones impresora
 
+Cambia configuraciones de impresoras de etiquetas
+
+Si es necesario cambiar la ruta de la impresora esto se debe hacer en los archivos  `*.sp1` de la carpeta `src`
+
+* src/scriptAS400.sp1
+* src/scriptWindows.sp1
+
+Se puede hacer un acceso directo para moverlo a el Escritorio del script `printconf.cmd`.
+
+## Requisitos
+
+* node.js
+* electron js
+* powershell
+* Invoke-WebRequest (cURL para Windows)
+
 ## Links de interes
 
 * [Stackoverflow - Pure JavaScript Send POST Data Without a Form](https://stackoverflow.com/questions/6396101/pure-javascript-send-post-data-without-a-form)
@@ -7,7 +23,7 @@
 * [Using XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
 * [icon](https://medium.com/fantageek/changing-electron-app-icon-acf26906c5ad)
 
-## es necesario cambiar a lo siguiente
+## Cosas por hacer
 
 ```js
 function initFuncReav() {

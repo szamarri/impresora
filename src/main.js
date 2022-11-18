@@ -37,6 +37,8 @@ const createWindow = () => {
     // const win = BrowserWindow.fromWebContents(webContents)
     //win.setTitle(title)
   })
+
+  mainWindow.setMenu(null);
   // and load the index.html of the app.
   mainWindow.loadFile("src/index.html");
 
