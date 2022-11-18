@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><style type="text/css">
+		body {
+			font-size: 10pt;
+			font-family: arial, helvetica, sans-serif;
+			background-color: lightgray
+		}
+
+		a:link {
+			color: #000000
+		}
+
+		a:active {
+			color: #000000
+		}
+
+		a:visited {
+			color: #000000
+		}
+
+		td {
+			font-size: 10pt;
+			font-family: arial, helvetica, sans-serif
+		}
+
+        main {
+            display: flex;
+            justify-content: center;
+        }
+
+        h2 {
+            margin: 10px;;
+        }
+
+        p {
+            margin: 10px;
+        }
+
+        .card-container {
+            display: inline-flex;
+            flex-direction: column;
+            margin-top: 5%;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow:
+                0 1px 1px hsl(0deg 0% 0% / 0.075),
+                0 2px 2px hsl(0deg 0% 0% / 0.075),
+                0 4px 4px hsl(0deg 0% 0% / 0.075),
+                0 8px 8px hsl(0deg 0% 0% / 0.075),
+                0 16px 16px hsl(0deg 0% 0% / 0.075)
+            ;
+        }
+
+        .spanSelected {
+            font-weight: bold;
+        }
+	</style>
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Printer configurations</title>
+</head>
+<body>
+    <main>
+        <div class="card-container">
+            <h2>Configuraci&oacute;n de impresora DATAMAX</h2>
+            <p>Se encuentra seleccionado <span class="spanSelected" id="spanSelected">Windows</span></p>
+            <button class="buttonAction" id="buttonAction"><span>Cambiar</span></button>
+        </div>
+    </main>
+    
+    <script src="./renderer.js"></script>
+</body>
+</html>

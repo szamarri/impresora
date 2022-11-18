@@ -1,0 +1,18 @@
+{
+  "name": "print-config",
+  "version": "1.0.0",
+  "description": "Printer Configuration",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Saul Zamarripa Rivera",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^21.2.3"
+  },
+  "dependencies": {
+    "node-powershell": "^5.0.1"
+  }
+}
