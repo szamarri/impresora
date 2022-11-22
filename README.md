@@ -9,6 +9,20 @@ Si es necesario cambiar la ruta de la impresora esto se debe hacer en los archiv
 
 Se puede hacer un acceso directo para moverlo a el Escritorio del script `printconf.cmd`.
 
+# Instalación
+
+El proceso de instalación basta con seguir las siguientes instrucciones:
+
+```bash
+cd impresora
+npm install
+
+# para ejecutar la aplicacion
+npm start
+```
+
+Para ejecutar la aplicacion unicamente se ejecuta el comando `npm start`, pero se encuentra el script `printconf.cmd` a el cual se puede crear un acceso directo desde el escritorio.
+
 ## Requisitos
 
 * node.js

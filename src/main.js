@@ -21,7 +21,6 @@ const createWindow = () => {
 
   // ipcMain
   ipcMain.on('change-conf', (event, spanValue) => {
-    console.log(spanValue)
     const webContents = event.sender
 
     let newSpanValue = "undefined"
@@ -82,7 +81,7 @@ function executeScriptCommand() {
   
   var child = spawn("powershell.exe",[command])
   child.stdout.on("data", (data) => {
-    console.log(`stdout: ${data}`);
+    console.log(`stdout\nStatusCode : ${data}`);
     //res.send(data);
   });
   
